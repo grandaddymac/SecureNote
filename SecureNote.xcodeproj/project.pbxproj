@@ -8,20 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		D8103D9E21DAE7C7004DD753 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8103D9D21DAE7C7004DD753 /* AppDelegate.swift */; };
-		D8103DA021DAE7C7004DD753 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8103D9F21DAE7C7004DD753 /* ViewController.swift */; };
+		D8103DA021DAE7C7004DD753 /* NoteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8103D9F21DAE7C7004DD753 /* NoteVC.swift */; };
 		D8103DA321DAE7C7004DD753 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8103DA121DAE7C7004DD753 /* Main.storyboard */; };
 		D8103DA521DAE7C9004DD753 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8103DA421DAE7C9004DD753 /* Assets.xcassets */; };
 		D8103DA821DAE7C9004DD753 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8103DA621DAE7C9004DD753 /* LaunchScreen.storyboard */; };
+		D8103DB521DAEC26004DD753 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8103DB421DAEC26004DD753 /* Note.swift */; };
+		D8103DB721DAEC7B004DD753 /* LockStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8103DB621DAEC7B004DD753 /* LockStatus.swift */; };
+		D8103DB921DAECFB004DD753 /* NoteObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8103DB821DAECFB004DD753 /* NoteObjects.swift */; };
+		D8103DBB21DAF283004DD753 /* NoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8103DBA21DAF283004DD753 /* NoteCell.swift */; };
+		D814764B21DD72B2007C8208 /* NoteDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D814764A21DD72B2007C8208 /* NoteDetailVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D8103D9A21DAE7C7004DD753 /* SecureNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecureNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8103D9D21DAE7C7004DD753 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D8103D9F21DAE7C7004DD753 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D8103D9F21DAE7C7004DD753 /* NoteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteVC.swift; sourceTree = "<group>"; };
 		D8103DA221DAE7C7004DD753 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D8103DA421DAE7C9004DD753 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D8103DA721DAE7C9004DD753 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D8103DA921DAE7C9004DD753 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8103DB421DAEC26004DD753 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		D8103DB621DAEC7B004DD753 /* LockStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockStatus.swift; sourceTree = "<group>"; };
+		D8103DB821DAECFB004DD753 /* NoteObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteObjects.swift; sourceTree = "<group>"; };
+		D8103DBA21DAF283004DD753 /* NoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteCell.swift; sourceTree = "<group>"; };
+		D814764A21DD72B2007C8208 /* NoteDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +64,59 @@
 		D8103D9C21DAE7C7004DD753 /* SecureNote */ = {
 			isa = PBXGroup;
 			children = (
+				D8103DB321DAE8E8004DD753 /* Enums */,
+				D8103DB221DAE8DB004DD753 /* Utilities */,
+				D8103DB121DAE8D4004DD753 /* Model */,
+				D8103DB021DAE8CB004DD753 /* View */,
+				D8103DAF21DAE8BF004DD753 /* Controller */,
 				D8103D9D21DAE7C7004DD753 /* AppDelegate.swift */,
-				D8103D9F21DAE7C7004DD753 /* ViewController.swift */,
 				D8103DA121DAE7C7004DD753 /* Main.storyboard */,
 				D8103DA421DAE7C9004DD753 /* Assets.xcassets */,
 				D8103DA621DAE7C9004DD753 /* LaunchScreen.storyboard */,
 				D8103DA921DAE7C9004DD753 /* Info.plist */,
 			);
 			path = SecureNote;
+			sourceTree = "<group>";
+		};
+		D8103DAF21DAE8BF004DD753 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D8103D9F21DAE7C7004DD753 /* NoteVC.swift */,
+				D814764A21DD72B2007C8208 /* NoteDetailVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D8103DB021DAE8CB004DD753 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D8103DBA21DAF283004DD753 /* NoteCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D8103DB121DAE8D4004DD753 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D8103DB421DAEC26004DD753 /* Note.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D8103DB221DAE8DB004DD753 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				D8103DB821DAECFB004DD753 /* NoteObjects.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		D8103DB321DAE8E8004DD753 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				D8103DB621DAEC7B004DD753 /* LockStatus.swift */,
+			);
+			path = Enums;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +190,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8103DA021DAE7C7004DD753 /* ViewController.swift in Sources */,
+				D8103DB921DAECFB004DD753 /* NoteObjects.swift in Sources */,
+				D814764B21DD72B2007C8208 /* NoteDetailVC.swift in Sources */,
+				D8103DB721DAEC7B004DD753 /* LockStatus.swift in Sources */,
+				D8103DA021DAE7C7004DD753 /* NoteVC.swift in Sources */,
+				D8103DBB21DAF283004DD753 /* NoteCell.swift in Sources */,
 				D8103D9E21DAE7C7004DD753 /* AppDelegate.swift in Sources */,
+				D8103DB521DAEC26004DD753 /* Note.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
