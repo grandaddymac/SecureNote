@@ -18,6 +18,11 @@ class NoteVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         tableView.dataSource = self
 
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tableView.reloadData()
+    }
 
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1

@@ -17,6 +17,7 @@
 		D8103DB921DAECFB004DD753 /* NoteObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8103DB821DAECFB004DD753 /* NoteObjects.swift */; };
 		D8103DBB21DAF283004DD753 /* NoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8103DBA21DAF283004DD753 /* NoteCell.swift */; };
 		D814764B21DD72B2007C8208 /* NoteDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D814764A21DD72B2007C8208 /* NoteDetailVC.swift */; };
+		D82F5AB721E016630094862F /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82F5AB621E016630094862F /* Helpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		D8103DB821DAECFB004DD753 /* NoteObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteObjects.swift; sourceTree = "<group>"; };
 		D8103DBA21DAF283004DD753 /* NoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteCell.swift; sourceTree = "<group>"; };
 		D814764A21DD72B2007C8208 /* NoteDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailVC.swift; sourceTree = "<group>"; };
+		D82F5AB621E016630094862F /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				D8103DB821DAECFB004DD753 /* NoteObjects.swift */,
+				D82F5AB621E016630094862F /* Helpers.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 				D8103DB921DAECFB004DD753 /* NoteObjects.swift in Sources */,
 				D814764B21DD72B2007C8208 /* NoteDetailVC.swift in Sources */,
 				D8103DB721DAEC7B004DD753 /* LockStatus.swift in Sources */,
+				D82F5AB721E016630094862F /* Helpers.swift in Sources */,
 				D8103DA021DAE7C7004DD753 /* NoteVC.swift in Sources */,
 				D8103DBB21DAF283004DD753 /* NoteCell.swift in Sources */,
 				D8103D9E21DAE7C7004DD753 /* AppDelegate.swift in Sources */,
